@@ -1,9 +1,13 @@
 import React from 'react'
+import Main from '../components/section/Main'
+
 
 const Todo = () => {
-  return (
-    <div>Todo</div>
-  )
+    return (
+        <Main>
+            Todo
+        </Main>
+    )
 }
 
 export default Todo

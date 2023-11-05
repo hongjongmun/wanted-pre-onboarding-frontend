@@ -1,9 +1,13 @@
 import React from 'react'
+import Main from '../components/section/Main'
+
 
 const Signin = () => {
-  return (
-    <div>Signin</div>
-  )
+    return (
+        <Main>
+            Signin
+        </Main>
+    )
 }
 
 export default Signin
