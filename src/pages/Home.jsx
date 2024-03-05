@@ -1,12 +1,18 @@
 import React from 'react'
-import Main from '../components/section/Main'
-
+import Header from '../components/Header'
+import SigninContextConsumer from '../contexts/SigninContextConsumer'
 
 const Home = () => {
     return (
-        <Main>
-            Home
-        </Main>
+        <>
+            <Header />
+            <div className="container">
+                <h1>Home</h1>
+                <hr />
+                <h2>메인 페이지</h2>
+                <SigninContextConsumer />
+            </div>
+        </>
     )
 }
 
