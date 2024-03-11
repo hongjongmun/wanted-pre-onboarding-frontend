@@ -1,13 +1,13 @@
 .container {
+    width: 1024px;
+    margin: 15px auto;
     border: 2px solid cornflowerblue;
-    width: 480px;
+    width: 500px;
     min-height: 400px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
     background-color: rgba(200,200,200,0.1);
-    margin-top: 50px;
-    margin-bottom: 50px;
   }
   
   .header {
@@ -75,7 +75,7 @@
   }
   
   .todoList {
-    height: 500px;
+    height: 400px;
     overflow-y: auto;
   
   }

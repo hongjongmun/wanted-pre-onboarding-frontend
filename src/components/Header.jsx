@@ -24,15 +24,15 @@ const Header = () => {
                     ?
                     /* 비로그인 시*/
                     <ul>
-                        <li><Link to="/signin">로그인</Link></li>
-                        <li><Link to="/signup">회원가입</Link></li>
-                        <li><Link to="/about">소개</Link></li>
+                        <li><Link className="btn" to="/signin">로그인</Link></li>
+                        <li><Link className="btn" to="/signup">회원가입</Link></li>
+                        <li><Link className="btn" to="/about">소개</Link></li>
                     </ul>
                     :
                     /* 로그인 시*/
                     <ul>
-                    <li><Link to="/todo">TodoList</Link></li>
-                    <li><button className="link" onClick={ () => logout()}>로그아웃</button></li>
+                    <li><Link className="btn" to="/todo">TodoList</Link></li>
+                    <li><button className="btn" onClick={ () => logout()}>로그아웃</button></li>
                     </ul>
                 }
                 

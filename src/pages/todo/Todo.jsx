@@ -26,6 +26,10 @@ const Todo = () => {
         }
     }, [])
 
+    const onSubmit = () => {
+        console.log("할일 추가");
+    }
+
     return (
         <>
             <Header />
@@ -37,11 +41,12 @@ const Todo = () => {
                 <SigninContextConsumer />
 
                 {/* todoinput 부분 */}
-                <form className="form">
+                <form className="form" onSubmit={onSubmit}>
                     <input placeholder="할 일 입력"
                            className="input" />
                     <button type="submit"
-                            className='btn'>추가</button>
+                            className="btn"
+                            >추가</button>
                 </form>
 
                 <TodoList todoList={todoList} />
