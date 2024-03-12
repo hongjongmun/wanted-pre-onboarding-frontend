@@ -6,7 +6,7 @@ const SigninContextConsumer = () => {
 
   return (
     <div>
-        <h3>로그인 여부 : {isSignin ? "로그인" : "로그아웃"} </h3>
+        <h3>로그인 여부 : {isSignin ? "YES" : "NO"} </h3>
     </div>
   )
 }

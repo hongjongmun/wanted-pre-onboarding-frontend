@@ -5,7 +5,7 @@ import Home from './pages/Home'
 import Signin from './pages/Signin'
 import Signup from './pages/Signup'
 import Todo from './pages/Todo'
-import About from './pages/About'
+import { TodoRoute, AccountRoute } from '../src/contexts/RouteSetting';
 import SigninContextProvider from './contexts/SigninContextProvider'
 
 
@@ -15,10 +15,9 @@ const App = () => {
         <SigninContextProvider>
             <Routes>
                 <Route path='/' element={<Home/>} />
-                <Route path='/about' element={<About/>} />
-                <Route path='/signin' element={<Signin/>} />
-                <Route path='/signup' element={<Signup/>} />
-                <Route path='/todo' element={<Todo/>} />
+                <Route path='/signin' element={<TodoRoute component={<Signin/>}/>} />
+                <Route path='/signup' element={<TodoRoute component={<Signup/>}/>} />
+                <Route path='/todo' element={<AccountRoute component={<Todo/>}/>} />
                 </Routes>
         </SigninContextProvider>        
         </BrowserRouter>

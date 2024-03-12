@@ -1,12 +1,14 @@
-import React, { useContext } from 'react'
-import { Link } from 'react-router-dom'
-import { SigninContext } from '../contexts/SigninContextProvider'
+import React from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Header = () => {
 
-    // isSignin : 로그인 여부 - Y(true), n(false)
+    const navigate = useNavigate();
 
-    const { isSignin, logout } = useContext(SigninContext);
+    const logoutHandler = () => {
+        localStorage.clear();
+        navigate('/');
+    }
 
     return (
         <header>
@@ -20,19 +22,11 @@ const Header = () => {
 
             <div className="util">
                 {
-                    !isSignin 
-                    ?
-                    /* 비로그인 시*/
                     <ul>
                         <li><Link className="btn" to="/signin">로그인</Link></li>
                         <li><Link className="btn" to="/signup">회원가입</Link></li>
-                        <li><Link className="btn" to="/about">소개</Link></li>
-                    </ul>
-                    :
-                    /* 로그인 시*/
-                    <ul>
-                    <li><Link className="btn" to="/todo">TodoList</Link></li>
-                    <li><button className="btn" onClick={ () => logout()}>로그아웃</button></li>
+                        <li><Link className="btn" to="/todo">TodoList</Link></li>
+                        <li><button className="btn" onClick={ () => logoutHandler()}>로그아웃</button></li>
                     </ul>
                 }
                 
