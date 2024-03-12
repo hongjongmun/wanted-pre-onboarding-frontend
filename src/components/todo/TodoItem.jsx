@@ -20,7 +20,7 @@ const TodoItem = ({ id, todo, isCompleted, setTodos }) => {
     }
     const updateHandler = async () => {
         try{
-            const { todo,isCompleted } =  await updateTodo(id,todoText,checkBox);
+            const { todo, isCompleted } =  await updateTodo(id, todoText, checkBox);
             setTodos((prevTodos) => {
                 // 업데이트된 데이터로 새로운 배열 생성
                 const updatedTodos = prevTodos.map((todoItem) =>
@@ -38,24 +38,26 @@ const TodoItem = ({ id, todo, isCompleted, setTodos }) => {
     }
 
     return (
-        <label>
+        <label className='todoItem'>
             <input type="checkbox" checked={checkBox} onChange={() => setCheckBox(!checkBox)} />
             {
-            inputToggle ? (
-                <>
+            inputToggle 
+            ? 
+            (
+            <div>
                 <input type="text" data-testid="modify-input" value={todoText} onChange={(e) => setTodoText(e.target.value)} />
-                <button data-testid="submit-button" onClick={updateHandler}>제출</button>
-                <button data-testid="cancel-button" onClick={() => setInputToggle(!inputToggle)}>취소</button>
-                </>
-                ) 
-                : 
-                (
-                <>
-                    <span>{todo}</span>
-                    <button data-testid="modify-button" onClick={() => setInputToggle(!inputToggle)}>수정</button>
-                    <button data-testid="delete-button" onClick={deleteHandler}>삭제</button>
-                </>
-                )
+                <button className='btn' data-testid="submit-button" onClick={updateHandler}>제출</button>
+                <button className='btn' data-testid="cancel-button" onClick={() => setInputToggle(!inputToggle)}>취소</button>
+            </div>
+            ) 
+            : 
+            (
+            <div>
+                <span>{todo}</span>
+                <button className='btn' data-testid="modify-button" onClick={() => setInputToggle(!inputToggle)}>수정</button>
+                <button className='btn' data-testid="delete-button" onClick={deleteHandler}>삭제</button>
+            </div>
+            )
             }
         </label>
     );

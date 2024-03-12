@@ -8,7 +8,7 @@ const Home = () => {
             <div className="container">
                 <h1>Home</h1>
                 <hr />
-                <h2>메인 페이지</h2>
+                <h2>TodoList 구현 웹 페이지 입니다.</h2>
             </div>
         </>
     )

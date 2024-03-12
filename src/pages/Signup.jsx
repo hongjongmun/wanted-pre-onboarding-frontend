@@ -66,7 +66,7 @@ const Signup = () => {
                         value={enterdPassword}
                         onChange={passwordChangeHandler}
                     />
-                    <button 
+                    <button className='btn'
                         data-testid="signup-button"
                         disabled={!enterdEmailIsValid || !enterdPasswordIsValid}
                     >
