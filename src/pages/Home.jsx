@@ -1,6 +1,5 @@
 import React from 'react'
 import Header from '../components/Header'
-import SigninContextConsumer from '../contexts/SigninContextConsumer'
 
 const Home = () => {
     return (
@@ -10,7 +9,6 @@ const Home = () => {
                 <h1>Home</h1>
                 <hr />
                 <h2>메인 페이지</h2>
-                <SigninContextConsumer />
             </div>
         </>
     )

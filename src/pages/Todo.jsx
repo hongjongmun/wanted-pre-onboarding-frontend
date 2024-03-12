@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import Header from '../components/Header'
-import SigninContextConsumer from '../contexts/SigninContextConsumer'
 import { styled } from 'styled-components';
 import { getTodos } from '../apis';
 import TodoItem from '../components/todo/TodoItem.jsx';
@@ -24,7 +23,6 @@ const Todo = () => {
     <>
         <Header />
         <div className="container">
-        <SigninContextConsumer />
         <TodoBox>
         <h1>Todo List 페이지</h1>
         <TodoForm AddTodo={setTodos}/>

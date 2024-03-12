@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { styled } from 'styled-components';
 import Header from '../components/Header'
-import SigninContextConsumer from '../contexts/SigninContextConsumer'
 import { emailValidate, passwordValidate } from '../utils/accountValid';
 import { userSignup } from '../apis';
 import useInput from '../utils/inputValid';
@@ -47,7 +46,6 @@ const Signup = () => {
                 <h1>Sionup</h1>
                 <hr />
                 <h2>회원가입 페이지</h2>
-                <SigninContextConsumer />
                 <FormBox onSubmit={submitHandler}>
                     <label>아이디</label>
                     <input 
