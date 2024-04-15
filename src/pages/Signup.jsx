@@ -43,7 +43,7 @@ const Signup = () => {
         <>
             <Header />
             <div className="container">
-                <h1>Sionup</h1>
+                <h1>Signup</h1>
                 <hr />
                 <h2>회원가입 페이지</h2>
                 <FormBox onSubmit={submitHandler}>

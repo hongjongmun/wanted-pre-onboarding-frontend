@@ -5,10 +5,23 @@ body {
   font-family: 'Noto Sans', sans-serif;
   font-size: var(--font-size-main);
 }
-ul { list-style-type: none; }
-a { text-decoration: none; color: black; }
-button { cursor: pointer; }
-.link { background-color: transparent; color: black; border: none; font-size: var(--font-size-main); }
+ul { 
+  list-style-type: none;
+}
+
+a { 
+  text-decoration: none; color: black; 
+}
+
+button { 
+  cursor: pointer;
+  background-color: transparent; color: black; border: none; font-size: var(--font-size-main);
+}
+
+.link { 
+  background-color: transparent; color: black; border: none; font-size: var(--font-size-main); 
+}
+
 h1 {
   text-align: center;
   color: royalblue;
