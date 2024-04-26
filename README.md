@@ -1,5 +1,5 @@
 # 원티드 프리온보딩 프론트엔드 - 사전 과제
-이 레파지토리는 원티드 프리온보딩 프론트엔드 과정 사전 과제 입니다.
+이 레파지토리는 원티드 프리온보딩 프론트엔드 과정 사전 과제로서, 로그인/회원가입 및 Todolist를 구현하는 프로젝트입니다.
 
 ## 지원자
 홍종문
@@ -12,6 +12,7 @@ git clone 후, npm install & npm start 명령어를 통해 실행시켜주세요
 
 2. TODO LIST
 
+<<<<<<< HEAD
 ## 구현 기능
 * ✅Assignment 1
   * 회원가입과 로그인 페이지에 이메일과 비밀번호의 유효성 검사기능 구현
@@ -45,3 +46,8 @@ git clone 후, npm install & npm start 명령어를 통해 실행시켜주세요
 ## 배포 링크
 
 (https://reliable-granita-4c30ae.netlify.app)
+=======
+## 배포 링크
+
+(https://reliable-granita-4c30ae.netlify.app)
+>>>>>>> origin/main
